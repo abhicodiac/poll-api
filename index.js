@@ -2,7 +2,7 @@
 const express = require('express');
 require('dotenv').config();
 const cookieParser = require('cookie-parser');
-const port = process.env.PS_PORT;
+const port = process.env.PS_DB_URI;
 const db = require('./configs/db_connection');
 
 const app = express(); // getting instance of express server into app constant
